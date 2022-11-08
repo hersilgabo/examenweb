@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Isaac</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">Isaac's World</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuIsaac" aria-controls="menuIsaac" aria-expanded="false" aria-label="Navegación del Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="menuIsaac">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a href="#menu1" class="nav-link">Menu1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Menu2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Menu3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Menu4</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-dark text-white">
+
+        <section class="py-5 text-center">
+            <h1 class="text-success">Bienvenido a mi página.</h1>
+            <p class="text-white-50">
+                bienvenidos a mi pagina donde podras calcular facilmente el area de distintas figuras geometricas
+                tales como:
+                <div class="row">
+                    <div class="col">triangulo</div>
+                    <div class="col">cuadrado</div>
+                    <div class="col">Rectangulo</div>
+                    <div class="col">circulo</div>
+                </div>
+            </p>
+        </section>
+
+        <div class="container py-4" id="menu1">
+            <div class="mb-2">
+                <h2>Area de las figuras geometricas</h2>
+            </div>
+            <form>
+                <div class="mb-2">
+                    <label for="selectFigura" class="form-label">Seleccione la figura geométrica</label>
+                    <select name="selectFigura" id="selectFigura" class="form-control" onclick="cargarForm()">
+                        <option value="0">Figura</option>
+                        <option value="1">Cuadrado</option>
+                        <option value="2">Circulo</option>
+                        <option value="3">Rectangulo</option>
+                        <option value="4">Triangulo</option>
+                    </select>
+                </div>
+                <div class="mb-2" id="areaForm">
+                    
+                </div>
+                <div class="mb-2">
+                    <button type="button" class="btn btn-success" onclick="calcularArea()">calcular</button>
+                </div>
+                <div class="mb-2">
+                    <label id="txtResult" class="form-label">Resultado:</label>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="/programa.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
